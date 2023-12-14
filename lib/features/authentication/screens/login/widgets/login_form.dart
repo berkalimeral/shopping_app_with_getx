@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import '../../../../../home_menu.dart';
 import '../../../../../utils/constants/colors.dart';
 import '../../../../../utils/constants/texts.dart';
 import '../../password_configuration/password_configuration.dart';
@@ -71,7 +72,9 @@ class LoginForm extends StatelessWidget {
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
                     backgroundColor: AppColors.primary),
-                onPressed: () {},
+                onPressed: () {
+                  Get.to(() => const NavigationMenu());
+                },
                 child: const Text(
                   Texts.signIn,
                   style: TextStyle(color: AppColors.white),
