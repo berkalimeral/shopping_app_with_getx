@@ -10,8 +10,17 @@ class Assets {
 class _AssetsImages {
   _AssetsImages._();
 
+  final emailVerification = _AssetsImagesEmailVerification._();
   final onboarding = _AssetsImagesOnboarding._();
 
+}
+
+class _AssetsImagesEmailVerification {
+  _AssetsImagesEmailVerification._();
+
+
+  final imgEmailVerificationPNG = 'assets/images/email_verification/img_email_verification.png';
+  final imgEmailVerification2PNG = 'assets/images/email_verification/img_email_verification2.png';
 }
 
 class _AssetsImagesOnboarding {

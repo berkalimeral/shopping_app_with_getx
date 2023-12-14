@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 class Texts {
   const Texts._();
 
+  //ONBOARDING SCREEN STRINGS
   static const onBoardingTitle1 = 'Choose your product';
   static const onBoardingTitle2 = 'Select Payment Method';
   static const onBoardingTitle3 = 'Deliver at your door step';
@@ -14,4 +15,38 @@ class Texts {
       'For Seamless Transactions, Choose Your Payment Path - Your Convenience, Our Priorty!';
   static const onBoardingSubtitle3 =
       'From Our Doorstep to Yours - Swift, Secure, and Contactless Delivery!';
+
+  //LOGIN SCREEN STRINGS
+  static const loginTitle = 'Welcome back,';
+  static const loginSubtitle =
+      'Discover Limitless Choices and Unmatched Convenience.';
+  static const createAccount = 'Create Account';
+  static const orSignIn = 'Or Sign in With';
+  static const signIn = 'Sign In';
+  static const forgetPassword = 'Forget Password?';
+  static const rememberMe = 'Remember Me';
+  static const email = 'E-Mail';
+  static const password = 'Password';
+
+  //SIGNUP SCREEN STRINGS
+  static const signUpTitle = 'Let\'s create your account';
+  static const firstName = 'First Name';
+  static const lastName = 'Last Name';
+  static const username = 'Username';
+  static const phoneNumber = 'Phone Number';
+  static const iAgreeTo = 'I agree to ';
+  static const privacyPolicy = 'Privacy Policy ';
+  static const and = 'and ';
+  static const termsOfUse = 'Terms of use';
+  static const orSignUp = 'Or Sign Up With';
+
+  //EMAIL VERIFICATION STRINGS
+  static const continueBtn = 'Continue';
+  static const verificationTitle = 'Verify your email address!';
+  static const verificationSubtitle =
+      'Congratulations! Your Account Awaits: Verify Your Emil to Start Shopping and Expreience a World of Unrivaled Dealts and Personalized Offers.';
+  static const resendEmail = 'Resend Email';
+  static const verificationSuccessTitle = 'Your account successfully created!';
+  static const verificationSuccessSubtitle =
+      'Welcome to your Ultimate Shopping Destination: Your Account is Created, Unleash the Joy of Seamless Online Shopping!';
 }

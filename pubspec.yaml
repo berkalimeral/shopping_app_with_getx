@@ -44,6 +44,7 @@ dependencies:
   logger: ^2.0.2+1
   flutter_native_splash: ^2.2.19
   smooth_page_indicator: ^1.1.0
+  iconsax: ^0.0.8
 
 dev_dependencies:
   flutter_test:
@@ -72,6 +73,8 @@ flutter:
     - assets/images/onboarding/img_onboard1.png
     - assets/images/onboarding/img_onboard2.png
     - assets/images/onboarding/img_onboard3.png
+    - assets/images/email_verification/img_email_verification.png
+    - assets/images/email_verification/img_email_verification2.png
     - assets/icons/
     - assets/logo/
 
