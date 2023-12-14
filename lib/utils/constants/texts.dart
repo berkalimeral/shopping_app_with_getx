@@ -49,4 +49,16 @@ class Texts {
   static const verificationSuccessTitle = 'Your account successfully created!';
   static const verificationSuccessSubtitle =
       'Welcome to your Ultimate Shopping Destination: Your Account is Created, Unleash the Joy of Seamless Online Shopping!';
+
+  //FORGET PASSWORD STRINGS
+  static const forgetTitle = 'Forget Password';
+  static const forgetSubtitle =
+      'Don\'t worry sometimes people can forget too, enter your email and we will send you a password reset link.';
+  static const submit = 'Submit';
+
+  //PASSWORD RESET STRINGS
+  static const resetTitle = 'Password Reset Email Send';
+  static const resetSubtitle =
+      'Your Account Security is Our Priority! We\'ve Sent You a Secure Link to Safely Change Your Password and Keep Your Account Protected.';
+  static const done = 'Done';
 }

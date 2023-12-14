@@ -75,6 +75,7 @@ flutter:
     - assets/images/onboarding/img_onboard3.png
     - assets/images/email_verification/img_email_verification.png
     - assets/images/email_verification/img_email_verification2.png
+    - assets/images/email_verification/img_reset_password.png
     - assets/icons/
     - assets/logo/
 

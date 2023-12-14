@@ -5,11 +5,9 @@ import 'package:kartal/kartal.dart';
 import '../../../../assets.dart';
 import '../../../../utils/constants/colors.dart';
 import '../../../../utils/constants/texts.dart';
-import '../login/login.dart';
-import '../../../../common/widgets/success_screen.dart';
 
-class EmailVerificationScreen extends StatelessWidget {
-  const EmailVerificationScreen({super.key});
+class ResetPasswordScreen extends StatelessWidget {
+  const ResetPasswordScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +16,7 @@ class EmailVerificationScreen extends StatelessWidget {
         automaticallyImplyLeading: false,
         actions: [
           IconButton(
-            onPressed: () => Get.offAll(() => const LoginScreen()),
+            onPressed: () => Get.back(),
             icon: const Icon(Icons.clear_outlined),
           ),
         ],
@@ -30,20 +28,21 @@ class EmailVerificationScreen extends StatelessWidget {
             children: [
               Image(
                 image: AssetImage(
-                    Assets.images.emailVerification.imgEmailVerificationPNG),
+                    Assets.images.emailVerification.imgResetPasswordPNG),
               ),
-              Text(Texts.verificationTitle,
-                  style: context.general.textTheme.headlineMedium),
-              const SizedBox(
-                height: 10,
-              ),
-              Text('support@codingwithsamara.com',
-                  style: context.general.textTheme.bodySmall),
               const SizedBox(
                 height: 10,
               ),
               Text(
-                Texts.verificationSubtitle,
+                Texts.resetTitle,
+                style: context.general.textTheme.headlineMedium,
+                textAlign: TextAlign.center,
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              Text(
+                Texts.resetSubtitle,
                 style: context.general.textTheme.bodyMedium,
                 textAlign: TextAlign.center,
               ),
@@ -55,19 +54,9 @@ class EmailVerificationScreen extends StatelessWidget {
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
                       backgroundColor: AppColors.primary),
-                  onPressed: () {
-                    Get.to(() => SuccessScreen(
-                          image: Assets.images.emailVerification
-                              .imgEmailVerification2PNG,
-                          title: Texts.verificationSuccessTitle,
-                          subtitle: Texts.verificationSuccessSubtitle,
-                          onPressed: () {
-                            Get.to(() => const LoginScreen());
-                          },
-                        ));
-                  },
+                  onPressed: () {},
                   child: const Text(
-                    Texts.continueBtn,
+                    Texts.done,
                     style: TextStyle(color: AppColors.white),
                   ),
                 ),

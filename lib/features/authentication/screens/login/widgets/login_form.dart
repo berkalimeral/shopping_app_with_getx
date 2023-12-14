@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 
 import '../../../../../utils/constants/colors.dart';
 import '../../../../../utils/constants/texts.dart';
+import '../../password_configuration/password_configuration.dart';
 import '../../sign_up/sign_up.dart';
 
 class LoginForm extends StatelessWidget {
@@ -55,7 +56,9 @@ class LoginForm extends StatelessWidget {
                   ],
                 ),
                 TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Get.to(() => const PasswordConfigurationScreen());
+                  },
                   child: const Text(Texts.forgetPassword),
                 ),
               ],

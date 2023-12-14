@@ -21,6 +21,7 @@ class _AssetsImagesEmailVerification {
 
   final imgEmailVerificationPNG = 'assets/images/email_verification/img_email_verification.png';
   final imgEmailVerification2PNG = 'assets/images/email_verification/img_email_verification2.png';
+  final imgResetPasswordPNG = 'assets/images/email_verification/img_reset_password.png';
 }
 
 class _AssetsImagesOnboarding {

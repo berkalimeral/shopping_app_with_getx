@@ -1,14 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:kartal/kartal.dart';
 
-import '../../../../assets.dart';
-import '../../../../utils/constants/colors.dart';
-import '../../../../utils/constants/texts.dart';
-import '../login/login.dart';
+import '../../utils/constants/colors.dart';
+import '../../utils/constants/texts.dart';
 
 class SuccessScreen extends StatelessWidget {
-  const SuccessScreen({super.key});
+  const SuccessScreen(
+      {super.key,
+      required this.image,
+      required this.title,
+      required this.subtitle,
+      required this.onPressed});
+
+  final String image;
+  final String title;
+  final String subtitle;
+  final VoidCallback onPressed;
 
   @override
   Widget build(BuildContext context) {
@@ -19,14 +26,13 @@ class SuccessScreen extends StatelessWidget {
           child: Column(
             children: [
               Image(
-                image: AssetImage(
-                    Assets.images.emailVerification.imgEmailVerification2PNG),
+                image: AssetImage(image),
               ),
               const SizedBox(
                 height: 10,
               ),
               Text(
-                Texts.verificationSuccessTitle,
+                title,
                 style: context.general.textTheme.headlineMedium,
                 textAlign: TextAlign.center,
               ),
@@ -34,7 +40,7 @@ class SuccessScreen extends StatelessWidget {
                 height: 10,
               ),
               Text(
-                Texts.verificationSuccessSubtitle,
+                subtitle,
                 style: context.general.textTheme.bodyMedium,
                 textAlign: TextAlign.center,
               ),
@@ -46,9 +52,7 @@ class SuccessScreen extends StatelessWidget {
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
                       backgroundColor: AppColors.primary),
-                  onPressed: () {
-                    Get.to(() => const LoginScreen());
-                  },
+                  onPressed: onPressed,
                   child: const Text(
                     Texts.continueBtn,
                     style: TextStyle(color: AppColors.white),
