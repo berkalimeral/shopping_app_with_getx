@@ -55,7 +55,20 @@ class HomeScreen extends StatelessWidget {
               showActionButton: true,
               textColor: AppColors.black,
             ),
-            const ProductCardVertical(),
+            GridView.builder(
+              shrinkWrap: true,
+              physics: const NeverScrollableScrollPhysics(),
+              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: 2,
+                mainAxisSpacing: 12,
+                crossAxisSpacing: 16,
+                mainAxisExtent: 250,
+              ),
+              itemCount: 6,
+              itemBuilder: (context, index) {
+                return const ProductCardVertical();
+              },
+            ),
           ],
         ),
       ),
