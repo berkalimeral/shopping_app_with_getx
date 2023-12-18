@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 
 import '../../../../utils/constants/texts.dart';
 import 'widgets/login_form.dart';
-import '../../../../common/widgets/login_form_divider.dart';
+import '../../../../common/widgets/login/login_form_divider.dart';
 import 'widgets/login_header.dart';
-import '../../../../common/widgets/login_social_buttons.dart';
+import '../../../../common/widgets/login/login_social_buttons.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});

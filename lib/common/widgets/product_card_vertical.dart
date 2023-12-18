@@ -5,6 +5,7 @@ import 'package:kartal/kartal.dart';
 import '../../assets.dart';
 import '../../utils/constants/colors.dart';
 import '../../utils/constants/texts.dart';
+import 'brand_title_with_verification.dart';
 import 'custom_texts/product_title_text.dart';
 import 'rounded_container.dart';
 import 'rounded_image.dart';
@@ -91,21 +92,8 @@ class ProductCardVertical extends StatelessWidget {
                   const SizedBox(
                     height: 4,
                   ),
-                  Row(
-                    children: const [
-                      ProductTitleText(
-                        title: 'Nike',
-                        maxLines: 1,
-                      ),
-                      SizedBox(
-                        width: 4,
-                      ),
-                      Icon(
-                        Iconsax.verify5,
-                        color: AppColors.primary,
-                        size: 15,
-                      ),
-                    ],
+                  const BrandTitleWithVerification(
+                    title: 'Nike',
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../assets.dart';
+import '../../../../common/widgets/grid_layout.dart';
 import '../../../../common/widgets/header_container.dart';
 import '../../../../common/widgets/product_card_vertical.dart';
 import '../../../../common/widgets/section_heading.dart';
@@ -55,19 +56,11 @@ class HomeScreen extends StatelessWidget {
               showActionButton: true,
               textColor: AppColors.black,
             ),
-            GridView.builder(
-              shrinkWrap: true,
-              physics: const NeverScrollableScrollPhysics(),
-              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: 2,
-                mainAxisSpacing: 12,
-                crossAxisSpacing: 16,
-                mainAxisExtent: 250,
-              ),
-              itemCount: 6,
+            GridLayout(
               itemBuilder: (context, index) {
                 return const ProductCardVertical();
               },
+              itemCount: 6,
             ),
           ],
         ),

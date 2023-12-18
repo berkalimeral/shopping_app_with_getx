@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../../../common/widgets/login_form_divider.dart';
-import '../../../../common/widgets/login_social_buttons.dart';
+import '../../../../common/widgets/login/login_form_divider.dart';
+import '../../../../common/widgets/login/login_social_buttons.dart';
 import '../../../../utils/constants/texts.dart';
 import 'widgets/sign_up_form.dart';
 import 'widgets/sign_up_title.dart';

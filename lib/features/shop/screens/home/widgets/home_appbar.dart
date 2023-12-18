@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:kartal/kartal.dart';
 
-import '../../../../../common/widgets/custom_appbar.dart';
+import '../../../../../common/widgets/appbar/custom_appbar.dart';
 import '../../../../../common/widgets/product_cart_icon.dart';
 import '../../../../../utils/constants/colors.dart';
 import '../../../../../utils/constants/texts.dart';
