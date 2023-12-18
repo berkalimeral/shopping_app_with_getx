@@ -61,4 +61,10 @@ class Texts {
   static const resetSubtitle =
       'Your Account Security is Our Priority! We\'ve Sent You a Secure Link to Safely Change Your Password and Keep Your Account Protected.';
   static const done = 'Done';
+
+  //HOME APPBAR STRINGS
+  static const homeAppbarTitle = 'Good day for shopping';
+  static const homeAppbarSubTitle = 'Emre Yılmaz';
+  static const homeSearchLbl = 'Search in Store';
+  static const homePopularCategories = 'Popular Categories';
 }
