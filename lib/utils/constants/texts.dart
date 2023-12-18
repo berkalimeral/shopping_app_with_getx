@@ -67,4 +67,8 @@ class Texts {
   static const homeAppbarSubTitle = 'Emre Yılmaz';
   static const homeSearchLbl = 'Search in Store';
   static const homePopularCategories = 'Popular Categories';
+
+  //HOME BODY STRINGS
+  static const homeBodyProducts = 'Popular Products';
+  static const homeBodyProductsTitle = 'Green Nike Air Shoes';
 }

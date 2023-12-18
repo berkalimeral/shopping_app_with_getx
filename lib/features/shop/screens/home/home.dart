@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
 
+import '../../../../assets.dart';
 import '../../../../common/widgets/header_container.dart';
+import '../../../../common/widgets/product_card_vertical.dart';
 import '../../../../common/widgets/section_heading.dart';
+import '../../../../utils/constants/colors.dart';
 import '../../../../utils/constants/texts.dart';
 import 'widgets/home_appbar.dart';
 import 'widgets/home_categories_area.dart';
+import 'widgets/home_promo_slider.dart';
 import 'widgets/home_search_area.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -23,7 +27,7 @@ class HomeScreen extends StatelessWidget {
                   HomeAppbar(),
                   HomeSearchArea(),
                   SizedBox(
-                    height: 30,
+                    height: 20,
                   ),
                   SectionHeading(
                     title: Texts.homePopularCategories,
@@ -36,6 +40,22 @@ class HomeScreen extends StatelessWidget {
                 ],
               ),
             ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16.0),
+              child: PromoSlider(
+                banners: [
+                  Assets.images.promoBanner.promoBanner1JPEG,
+                  Assets.images.promoBanner.promoBanner2JPEG,
+                  Assets.images.promoBanner.promoBanner3JPEG,
+                ],
+              ),
+            ),
+            const SectionHeading(
+              title: Texts.homeBodyProducts,
+              showActionButton: true,
+              textColor: AppColors.black,
+            ),
+            const ProductCardVertical(),
           ],
         ),
       ),

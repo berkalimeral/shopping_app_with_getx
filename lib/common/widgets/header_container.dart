@@ -19,7 +19,7 @@ class HeaderContainer extends StatelessWidget {
         color: AppColors.primary,
         padding: const EdgeInsets.only(bottom: 0),
         child: SizedBox(
-          height: 400,
+          height: 350,
           child: Stack(
             children: [
               Positioned(

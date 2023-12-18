@@ -24,11 +24,15 @@ class SectionHeading extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 16),
       child: Row(
+        mainAxisAlignment: showActionButton
+            ? MainAxisAlignment.spaceBetween
+            : MainAxisAlignment.start,
         children: [
           Text(
             title,
-            style: context.general.textTheme.headlineSmall!
-                .apply(color: textColor),
+            style: context.general.textTheme.titleMedium!.apply(
+              color: textColor,
+            ),
           ),
           showActionButton
               ? TextButton(

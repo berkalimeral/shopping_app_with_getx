@@ -1,9 +1,18 @@
+// ignore_for_file: constant_identifier_names
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 import 'features/shop/screens/home/home.dart';
 import 'utils/constants/colors.dart';
+
+enum Screens {
+  Home,
+  Store,
+  Wishlist,
+  Profile,
+}
 
 class NavigationMenu extends StatelessWidget {
   const NavigationMenu({super.key});
@@ -20,11 +29,15 @@ class NavigationMenu extends StatelessWidget {
           onDestinationSelected: (value) =>
               controller.selectedIndex.value = value,
           backgroundColor: AppColors.white,
-          destinations: const [
-            NavigationDestination(icon: Icon(Iconsax.home), label: 'Home'),
-            NavigationDestination(icon: Icon(Iconsax.shop), label: 'Store'),
-            NavigationDestination(icon: Icon(Iconsax.heart), label: 'Wishlist'),
-            NavigationDestination(icon: Icon(Iconsax.user), label: 'Profile'),
+          destinations: [
+            NavigationDestination(
+                icon: const Icon(Iconsax.home), label: Screens.Home.name),
+            NavigationDestination(
+                icon: const Icon(Iconsax.shop), label: Screens.Store.name),
+            NavigationDestination(
+                icon: const Icon(Iconsax.heart), label: Screens.Wishlist.name),
+            NavigationDestination(
+                icon: const Icon(Iconsax.user), label: Screens.Profile.name),
           ],
         ),
       ),

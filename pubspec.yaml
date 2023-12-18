@@ -77,6 +77,11 @@ flutter:
     - assets/images/email_verification/img_email_verification.png
     - assets/images/email_verification/img_email_verification2.png
     - assets/images/email_verification/img_reset_password.png
+    - assets/images/promo_banner/promo_banner1.jpeg
+    - assets/images/promo_banner/promo_banner2.jpeg
+    - assets/images/promo_banner/promo_banner3.jpeg
+    - assets/images/products/shoe1.png
+    - assets/images/products/shoe2.png
     - assets/icons/ic_clothes.png
     - assets/icons/ic_shoes.png
     - assets/logo/
