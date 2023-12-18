@@ -18,7 +18,7 @@ class EmailVerificationScreen extends StatelessWidget {
         automaticallyImplyLeading: false,
         actions: [
           IconButton(
-            onPressed: () => Get.offAll(() => const LoginScreen()),
+            onPressed: () => Get.offAll(const LoginScreen()),
             icon: const Icon(Icons.clear_outlined),
           ),
         ],
