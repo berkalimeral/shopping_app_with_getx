@@ -2,9 +2,18 @@
 class Assets {
   Assets._();
 
+  static final icons = _AssetsIcons._();
   static final images = _AssetsImages._();
   static final logo = _AssetsLogo._();
 
+}
+
+class _AssetsIcons {
+  _AssetsIcons._();
+
+
+  final icClothesPNG = 'assets/icons/ic_clothes.png';
+  final icShoesPNG = 'assets/icons/ic_shoes.png';
 }
 
 class _AssetsImages {
