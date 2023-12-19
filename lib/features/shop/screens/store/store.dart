@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:kartal/kartal.dart';
 
-import '../../../../assets.dart';
 import '../../../../common/widgets/appbar/custom_tabbar.dart';
-import '../../../../common/widgets/brand_title_with_verification.dart';
 import '../../../../common/widgets/appbar/custom_appbar.dart';
+import '../../../../common/widgets/cards/store_brand_card.dart';
 import '../../../../common/widgets/grid_layout.dart';
-import '../../../../common/widgets/images/circlar_image.dart';
 import '../../../../common/widgets/product_cart_icon.dart';
 import '../../../../common/widgets/rounded_container.dart';
 import '../../../../common/widgets/section_heading.dart';
+import '../../../../common/widgets/tabs/category_tab.dart';
 import '../../../../utils/constants/colors.dart';
 import '../home/widgets/home_search_area.dart';
 
@@ -85,78 +84,13 @@ class StoreScreen extends StatelessWidget {
               ),
             ];
           },
-          body: TabBarView(
+          body: const TabBarView(
             children: [
-              Padding(
-                padding: const EdgeInsets.all(16),
-                child: Column(
-                  children: [
-                    BrandShowCase(
-                      images: [
-                        Assets.icons.icClothesPNG,
-                        Assets.icons.icClothesPNG,
-                        Assets.icons.icClothesPNG,
-                      ],
-                    ),
-                  ],
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 16),
-                child: Column(
-                  children: [
-                    BrandShowCase(
-                      images: [
-                        Assets.icons.icClothesPNG,
-                        Assets.icons.icClothesPNG,
-                        Assets.icons.icClothesPNG,
-                      ],
-                    ),
-                  ],
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 16),
-                child: Column(
-                  children: [
-                    BrandShowCase(
-                      images: [
-                        Assets.icons.icClothesPNG,
-                        Assets.icons.icClothesPNG,
-                        Assets.icons.icClothesPNG,
-                      ],
-                    ),
-                  ],
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 16),
-                child: Column(
-                  children: [
-                    BrandShowCase(
-                      images: [
-                        Assets.icons.icClothesPNG,
-                        Assets.icons.icClothesPNG,
-                        Assets.icons.icClothesPNG,
-                      ],
-                    ),
-                  ],
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 16),
-                child: Column(
-                  children: [
-                    BrandShowCase(
-                      images: [
-                        Assets.icons.icClothesPNG,
-                        Assets.icons.icClothesPNG,
-                        Assets.icons.icClothesPNG,
-                      ],
-                    ),
-                  ],
-                ),
-              ),
+              CategoryTab(),
+              CategoryTab(),
+              CategoryTab(),
+              CategoryTab(),
+              CategoryTab(),
             ],
           ),
         ),
@@ -202,58 +136,6 @@ class BrandShowCase extends StatelessWidget {
         backgroundColor: AppColors.grey,
         margin: const EdgeInsets.all(6),
         child: Image(image: AssetImage(image)),
-      ),
-    );
-  }
-}
-
-class StoreBrandCard extends StatelessWidget {
-  const StoreBrandCard({
-    super.key,
-    this.onTap,
-    required this.showBorder,
-  });
-
-  final void Function()? onTap;
-  final bool showBorder;
-
-  @override
-  Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: onTap,
-      child: RoundedContainer(
-        padding: const EdgeInsets.all(4),
-        showBorder: showBorder,
-        borderColor: AppColors.darkGrey,
-        backgroundColor: Colors.transparent,
-        child: Row(
-          children: [
-            Flexible(
-              child: CirclarImage(
-                image: Assets.icons.icClothesPNG,
-                backgroundColor: Colors.transparent,
-              ),
-            ),
-            const SizedBox(
-              width: 3,
-            ),
-            Expanded(
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  const BrandTitleWithVerification(title: 'Nike'),
-                  Text(
-                    '256 products',
-                    overflow: TextOverflow.ellipsis,
-                    style: context.general.textTheme.labelMedium!
-                        .apply(color: AppColors.darkGrey),
-                  ),
-                ],
-              ),
-            ),
-          ],
-        ),
       ),
     );
   }

@@ -5,7 +5,9 @@ import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 import 'features/shop/screens/home/home.dart';
+import 'features/shop/screens/profile/profile.dart';
 import 'features/shop/screens/store/store.dart';
+import 'features/shop/screens/wishlist/wishlist.dart';
 import 'utils/constants/colors.dart';
 
 enum Screens {
@@ -53,11 +55,7 @@ class NavigationController extends GetxController {
   final screens = [
     const HomeScreen(),
     const StoreScreen(),
-    Container(
-      color: Colors.pink,
-    ),
-    Container(
-      color: Colors.amber,
-    )
+    const WishlistScreen(),
+    const ProfileScreen()
   ];
 }

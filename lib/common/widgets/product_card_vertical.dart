@@ -7,6 +7,7 @@ import '../../utils/constants/colors.dart';
 import '../../utils/constants/texts.dart';
 import 'brand_title_with_verification.dart';
 import 'custom_texts/product_title_text.dart';
+import 'icon/circular_icon.dart';
 import 'rounded_container.dart';
 import 'rounded_image.dart';
 
@@ -49,19 +50,10 @@ class ProductCardVertical extends StatelessWidget {
                   Positioned(
                     right: 0,
                     top: 0,
-                    child: Container(
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(100),
-                        color: AppColors.white.withOpacity(0.9),
-                      ),
-                      child: IconButton(
+                    child: CircularIcon(
                         onPressed: () {},
-                        icon: const Icon(
-                          Iconsax.heart5,
-                          color: AppColors.error,
-                        ),
-                      ),
-                    ),
+                        icon: Iconsax.heart5,
+                        iconColor: AppColors.error),
                   ),
                   Positioned(
                     top: 12,
