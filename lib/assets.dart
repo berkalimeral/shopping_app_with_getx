@@ -14,6 +14,7 @@ class _AssetsIcons {
 
   final icClothesPNG = 'assets/icons/ic_clothes.png';
   final icShoesPNG = 'assets/icons/ic_shoes.png';
+  final icUserPNG = 'assets/icons/ic_user.png';
 }
 
 class _AssetsImages {

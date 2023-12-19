@@ -8,9 +8,11 @@ class HeaderContainer extends StatelessWidget {
   const HeaderContainer({
     super.key,
     required this.child,
+    this.height = 350,
   });
 
   final Widget child;
+  final double? height;
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +21,7 @@ class HeaderContainer extends StatelessWidget {
         color: AppColors.primary,
         padding: const EdgeInsets.only(bottom: 0),
         child: SizedBox(
-          height: 350,
+          height: height,
           child: Stack(
             children: [
               Positioned(
